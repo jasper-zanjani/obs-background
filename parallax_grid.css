@@ -1,0 +1,41 @@
+.background {
+  background-size: 150% 100%;
+  background-image: 
+    repeating-linear-gradient(90deg, hsla(15,0%,62%,0.05) 0px, hsla(15,0%,62%,0.05) 2px,transparent 2px, transparent 104px),
+    repeating-linear-gradient(0deg, hsla(15,0%,62%,0.05) 0px, hsla(15,0%,62%,0.05) 2px,transparent 2px, transparent 104px),
+    repeating-linear-gradient(0deg, hsla(15,0%,62%,0.05) 0px, hsla(15,0%,62%,0.05) 2px,transparent 2px, transparent 52px),
+    repeating-linear-gradient(90deg, hsla(15,0%,62%,0.05) 0px, hsla(15,0%,62%,0.05) 2px,transparent 2px, transparent 52px),
+    radial-gradient(#123,#080f18)
+    /* linear-gradient(0deg, rgb(20,20,20),rgb(20,20,20)) */
+  ;
+  /* animation: background-animation 6s steps(7,end) infinite; */
+  animation: background-animation 60s linear infinite;
+}
+.foreground {
+  background-size: 200% 100%;
+  background-image: 
+    repeating-linear-gradient(90deg, hsla(15,0%,62%,0.2) 0px, hsla(15,0%,62%,0.2) 3px,transparent 3px, transparent 218px),
+    repeating-linear-gradient(0deg, hsla(15,0%,62%,0.2) 0px, hsla(15,0%,62%,0.2) 3px,transparent 3px, transparent 218px),
+    repeating-linear-gradient(0deg, hsla(15,0%,62%,0.2) 0px, hsla(15,0%,62%,0.2) 3px,transparent 3px, transparent 109px),
+    repeating-linear-gradient(90deg, hsla(15,0%,62%,0.2) 0px, hsla(15,0%,62%,0.2) 3px,transparent 3px, transparent 109px)
+    /* linear-gradient(0deg, rgb(20,20,20),rgb(20,20,20)) */
+  ;
+  /* animation: background-animation 5s steps(11,end) infinite; */
+  animation: background-animation 60s linear infinite;
+}
+.nearground {
+  background-size: 400% 100%;
+  background-image: 
+    repeating-linear-gradient(90deg, hsla(15,0%,62%,0.3) 0px, hsla(15,0%,62%,0.3) 3px,transparent 6px, transparent 312px),
+    repeating-linear-gradient(90deg, hsla(15,0%,62%,0.3) 0px, hsla(15,0%,62%,0.3) 6px,transparent 6px, transparent 624px),
+    repeating-linear-gradient(0deg, hsla(15,0%,62%,0.3) 0px, hsla(15,0%,62%,0.3) 3px,transparent 6px, transparent 312px),
+    repeating-linear-gradient(0deg, hsla(15,0%,62%,0.3) 0px, hsla(15,0%,62%,0.3) 6px,transparent 6px, transparent 624px)
+    /* linear-gradient(0deg, rgb(20,20,20),rgb(20,20,20)) */
+  ;
+  animation: background-animation 60s linear infinite;
+}
+
+@keyframes background-animation {
+  0%{background-position:0% 50%}
+  100%{background-position:100% 50%}
+}

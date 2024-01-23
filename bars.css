@@ -1,0 +1,92 @@
+body {
+  /* background-image: url('1.jpg'); */
+  animation: bg-image-flip 15s steps(1,end) infinite;
+}
+
+.background {
+  opacity: 100%;
+  background-blend-mode: lighten;
+  /* background-image: url('30.jpg'); */
+  /* animation: bg-image-cycle 15s steps(30,end) infinite; */
+  animation: bg-image-cycle 15s steps(1,end) infinite;
+}
+
+.foreground {
+  background-image: radial-gradient(rgba(48, 64, 96, 0.3), black);
+  animation: bg-image-flip 15s steps(1,end) infinite;
+}
+.nearground {
+  /* opacity: 0; */
+  background-size:2000% 100%;
+  background-image: 
+    repeating-linear-gradient(70deg, 
+      #2c588555 0px, #2c588555 1000px,
+      #20457555 1011px, #20457555 2000px, 
+      #20457555 2011px, #20457555 3000px, 
+      #2c588555 3011px, #2c588555 4000px
+    );
+
+  animation: crawl 900s linear infinite;
+}
+
+.grain {
+  /* opacity: 5%;
+  mix-blend-mode: lighten; 
+  opacity: 15%;
+  background-image: url('1.jpg');
+  background-blend-mode: screen;
+  animation: bg-image-flip 5s steps(1,end) infinite;  */
+}
+
+@keyframes crawl {
+  0% {
+    background-position: left center;
+  }
+  /* 50% {background-position: right center;} */
+  100% {
+    background-position: right center;}
+}
+@keyframes bgcolor {
+  0% {
+    background-image: repeating-linear-gradient(15deg, #080f1888, #080f1888 20px, #10203088 20px, #10203088 40px);
+  }
+  25% {
+    background-image: repeating-linear-gradient(60deg, #080f1888, #080f1888 20px, #10203088 20px, #10203088 40px);}
+  50% {
+    background-image: repeating-linear-gradient(-30deg, #080f1888, #080f1888 20px, #10203088 20px, #10203088 40px);}
+}
+
+
+
+@keyframes bg-image-flip {
+  50%  {transform:rotate(0.5turn)}
+}
+
+@keyframes bg-image-cycle {
+  0%  {background-image: url('img/1.jpg')}
+  4%  {background-image: url('img/2.jpg')}
+  8%  {background-image: url('img/3.jpg')}
+  12%  {background-image: url('img/4.jpg')}
+  16%  {background-image: url('img/5.jpg')}
+  20% {background-image: url('img/6.jpg')}
+  24% {background-image: url('img/7.jpg')}
+  28% {background-image: url('img/8.jpg')}
+  32% {background-image: url('img/9.jpg')}
+  36% {background-image: url('img/11.jpg')}
+  40% {background-image: url('img/13.jpg')}
+  44% {background-image: url('img/15.jpg')}
+  48% {background-image: url('img/16.jpg')}
+  52% {background-image: url('img/18.jpg')}
+  56% {background-image: url('img/19.jpg')}
+  60% {background-image: url('img/20.jpg')}
+  64% {background-image: url('img/21.jpg')}
+  68% {background-image: url('img/22.jpg')}
+  72% {background-image: url('img/23.jpg')}
+  76% {background-image: url('img/24.jpg')}
+  80% {background-image: url('img/25.jpg')}
+  84% {background-image: url('img/26.jpg')}
+  88% {background-image: url('img/27.jpg')}
+  92% {background-image: url('img/28.jpg')}
+  96% {background-image: url('img/29.jpg')}
+  100% {background-image: url('img/30.jpg')}
+}

@@ -1,0 +1,54 @@
+.bokeh-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  /* border: 10px red solid; */
+  overflow: hidden;
+  opacity: 100%;
+}
+
+.bokeh {
+  position: absolute;
+  border-radius: 50%;
+}
+.bokeh-foreground{
+  animation: 3s bokeh-foreground ease-in-out infinite;
+}
+
+.bokeh-background {
+  animation: 3s bokeh-background ease-in-out infinite;
+}
+
+#a {
+  left: -100%;
+  top: -10%;
+  width: 20rem;
+  height: 20rem;
+  box-shadow: 51rem 0 0.5rem white;
+  opacity: 20%;
+}
+#b {
+  left: 0%;
+  top: 20%;
+  width: 15rem;
+  height: 15rem;
+  box-shadow: 31rem 0 0.5rem white;
+  opacity: 10%;
+}
+#c {
+  left: -15%;
+  top: 20%;
+  width: 15rem;
+  height: 15rem;
+  box-shadow: 31rem 0 0.5rem white;
+  opacity: 10%;
+}
+
+@keyframes bokeh-foreground {
+  50% { left: 100%;}
+}
+@keyframes bokeh-background {
+  50% { left: 50%;}
+}
